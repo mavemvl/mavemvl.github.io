@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>&udm=14</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h2>&udm=14 - De-AI your Google searches</h2>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+<input type="text" id="search" placeholder="Enter search...">
+<button id="done">Search</button>
+<script>
+$('#done').on('click', function() {
+var searc = "https://google.com/search?q=" + encodeURIComponent($('#search').val());
+window.location.href = searc + "&udm=14";
+});
+</script>
+</body>
+</html>
